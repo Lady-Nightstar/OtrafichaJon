@@ -1,0 +1,217 @@
+.storm{
+  border:12px solid var(--border1);
+  outline:10px solid var(--border2);
+  background-image:var(--image);
+  width:500px;
+  height:500px;
+  margin:25px auto;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  overflow:hidden;
+}
+.storm:before{
+  content:"";
+  position:absolute;
+  display:block;
+  width:500px;
+  height:500px;
+  opacity:0.5;
+  background: linear-gradient(var(--accent1), var(--accent2));
+}
+.storm .s1{
+  position:absolute;
+  right:-600px;
+  background:var(--accent1);
+  height:200px;
+  width:500px;
+  box-sizing:border-box;
+  border:1px solid var(--accent2);
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-wrap:wrap;
+  transition:1s ease;
+  z-index:1;
+}
+.storm .sicon{
+  background:var(--bckg1);
+  height:200px;
+  width:250px;
+  align-self:flex-start;
+  margin: -1px 0 -1px -1px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid var(--border2);
+  box-sizing:border-box;
+  border-right:1px solid var(--accent2);
+  position:relative;
+}
+.storm .sicon m{
+  background-image:var(--icon);
+  background-size:cover;
+  height:150px;
+  width:150px;
+  border-radius:100%;
+  border:5px solid var(--accent2);
+  background-color:var(--accent-2);
+  display:block;
+}
+.storm .sicon:before{
+  content:"";
+  position:absolute;
+  left:-101px;
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 75px 100px 75px 0;
+border-color: transparent var(--bckg1) transparent transparent;
+  transition:1s ease;
+  transition-delay:0;
+}
+.storm .s2{
+  background:var(--bckg2);
+  position:absolute;
+  bottom:0;
+  left:-600px;
+  width:500px;
+  height:301px;
+  box-sizing:border-box;
+  border:1px solid var(--border2);
+  transition:1s ease;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.storm .s2:after{
+  content:"";
+  position:absolute;
+  right:-101px;
+  width: 0px;
+height: 0;
+border-style: solid;
+border-width: 125px 0 125px 100px;
+border-color: transparent transparent transparent var(--bckg1);
+}
+.storm .sheader{
+  width:249px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+.storm .sheader h1{
+  font:28px Raleway;
+  padding:0 20px;
+  margin:0;
+  line-height:18px;
+  font-weight:200;
+  color:var(--border1);
+  text-shadow:1px 1px 0 var(--accent2), -1px 1px 0 var(--accent2), 1px -1px 0 var(--accent2), -1px -1px 0 var(--accent2);
+}
+.storm .sheader p {
+  text-align:justify;
+  text-align-last:justify;
+  margin:10px 20px 0;
+  color:var(--border1);
+  opacity:0.9;
+  font:10px 'Calibri';
+  font-style:italic;
+  max-height:51px;
+  overflow:hidden;
+}
+.storm .sdatos{
+  display:flex;
+  jsutify-content:center;
+  align-items:stretch;
+  flex-wrap:wrap;
+  flex-direction:column;
+  width:200px;
+  height:229px;
+  padding:10px;
+}
+.storm .sdatos n{
+  font:9px 'Calibri';
+  text-transform:uppercase;
+  color:var(--border1);
+  text-align:center;
+  text-shadow:1px 1px 0 var(--accent2), -1px 1px 0 var(--accent2), 1px -1px 0 var(--accent2), -1px -1px 0 var(--accent2);
+  letter-spacing:2px;
+  display:flex;
+  border-radius:2px;
+  border:1px solid var(--accent2);
+  justify-content:center;
+  align-items:center;
+  flex-grow:1;
+  background:var(--accent1);
+  margin-bottom:10px;
+}
+.storm .sdatos n:last-of-type{
+  margin-bottom:0;
+}
+.storm .stext{
+  border-left:1px solid var(--border2);
+  width:278px;
+  height:299px;
+  padding:10px;
+  box-sizing:border-box;
+}
+.storm .stext p{
+  margin:0;
+  overflow:auto;
+  height:329px;
+  padding-right:5px;
+  font:11px 'Tahoma';
+  color:var(--txt);
+  line-height:13px;
+  text-align:justify;
+}
+.storm .stext p::-webkit-scrollbar{
+  width:3px;
+  height:3px;
+}
+.storm .stext p::-webkit-scrollbar-thumb{
+  background:var(--accent2);
+  border-top:1px solid var(--bckg2);
+  border-bottom:1px solid var(--bckg2);
+}
+.storm .stext p::-webkit-scrollbar-track{
+  background:var(--border2);
+  border:1px solid var(--bckg2);
+}
+.storm .stext p strong, .storm .stext p b{
+  color:var(--accent1);
+}
+.storm .stext p i, .storm .stext p em{
+  color:var(--accent2);
+}
+.storm br {
+  display:none;
+}
+.storm p br {
+  display:block;
+}
+.storm:hover .s1{
+  right:0;
+}
+.storm:hover .s2{
+  left:0;
+}
+.ncredit {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-size: 10px;
+  text-decoration: none;
+  font: 8px verdana;
+  color:#aaa;
+}
+.storm + br + .ncredit {
+  margin-top: -15px;
+}
+.ncredit:before {
+  content: "©";
+}
